@@ -35,7 +35,7 @@ object Demo03_Stream_WC {
         sumed.print()
 
         //5.触发执行
-        env.execute("stream wc scala")
+        //env.execute("stream wc scala")
 
 
 

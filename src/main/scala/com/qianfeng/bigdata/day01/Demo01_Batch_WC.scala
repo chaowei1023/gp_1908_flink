@@ -5,7 +5,7 @@ import org.apache.flink.api.scala.{DataSet, ExecutionEnvironment, GroupedDataSet
 //隐式转换
 import org.apache.flink.api.scala._
 /**
-  * 统计词频  scala版本
+  * 统计词频 批处理  scala版本
   */
 object Demo01_Batch_WC {
 

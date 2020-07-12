@@ -12,6 +12,19 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://F:/_NZ_1907班/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://F:/_NZ_1907班/lib" />
+        </SOURCES>
+        <jarDirectory url="file://F:/_NZ_1907班/lib" recursive="false" />
+        <jarDirectory url="file://F:/_NZ_1907班/lib" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.11.8" level="project" />
     <orderEntry type="library" name="Maven: org.apache.flink:flink-clients_2.11:1.9.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.flink:flink-core:1.9.1" level="project" />
@@ -124,18 +137,7 @@
     <orderEntry type="library" name="Maven: org.apache.flink:flink-connector-kafka-base_2.11:1.9.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:0.9.0.1" level="project" />
     <orderEntry type="library" name="Maven: net.jpountz.lz4:lz4:1.2.0" level="project" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="file://F:/_NZ_1907班/lib" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="file://F:/_NZ_1907班/lib" />
-        </SOURCES>
-        <jarDirectory url="file://F:/_NZ_1907班/lib" recursive="false" />
-        <jarDirectory url="file://F:/_NZ_1907班/lib" recursive="false" type="SOURCES" />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="Maven: org.apache.flink:flink-jdbc_2.11:1.9.1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.flink:flink-connector-kafka_2.11:1.9.1" level="project" />
   </component>
 </module>
