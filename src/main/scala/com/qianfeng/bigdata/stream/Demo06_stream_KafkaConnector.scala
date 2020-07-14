@@ -18,7 +18,7 @@ object Demo06_stream_KafkaConnector {
 
         env.enableCheckpointing(10) //开启checkpoint
         //定义kafka消费所需
-        val fromTopic = "test"
+        val fromTopic = "yq_report"
         val pro: Properties = new Properties()
         //使用类加载器加载consumer，properties
         pro.load(this.getClass.getClassLoader.getResourceAsStream("consumer.properties"))
@@ -26,8 +26,8 @@ object Demo06_stream_KafkaConnector {
         //添加flink kafka的消费者
         val flinkKafkaConsumer = new FlinkKafkaConsumer09[String](fromTopic, new SimpleStringSchema(), pro)
         //设置消费者相关信息
-        //flinkKafkaConsumer.setStartFromEarliest() //从最早的位置开始消费
-        flinkKafkaConsumer.setStartFromLatest() //从最新的位置消费
+        flinkKafkaConsumer.setStartFromEarliest() //从最早的位置开始消费
+        //flinkKafkaConsumer.setStartFromLatest() //从最新的位置消费
         flinkKafkaConsumer.setCommitOffsetsOnCheckpoints(true) //设置offset提交基于checkpoint
         val res: DataStreamSource[String] = env.addSource(flinkKafkaConsumer)
 
